@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+
+<form action="http://localhost:8080/students/sign-up" method="POST">
+
+  <div>
+
+    <label for="fullName">Full Name:</label>
+    <input id="fullName"
+           type="text"
+           name="fullName"
+           placeholder="Full Name">
+
+  </div>
+
+  <br>
+
+  <div>
+    <label for="emailInput">Email:</label>
+    <input id="emailInput"
+           type="email"
+           name="email"
+           placeholder="Email Address">
+  </div>
+
+  <br>
+
+  <div>
+    <label for="passwordInput">Password:</label>
+    <input id="passwordInput"
+           type="password"
+           name="password"
+           placeholder="Password">
+  </div>
+
+  <br>
+
+  <div>
+    <label for="ageInput">Age:</label>
+    <input id="ageInput"
+           type="number"
+           name="age"
+           placeholder="Age">
+  </div>
+
+  <br>
+
+  <div>
+    <label for="dateInput">Date of Birth</label>
+    <input id="dateInput"
+           type="date"
+           name="dob">
+  </div>
+
+  <br>
+
+  <span>
+    <span>
+      Gender:
+    </span>
+    <label for="genderInputMale">Male</label>
+    <input id="genderInputMale"
+           type="radio"
+           name="gender"
+           value="Male">
+  </span>
+
+  <span>
+    <label for="genderInputFemale">Female</label>
+    <input id="genderInputFemale"
+           type="radio"
+           name="gender"
+           value="Female">
+  </span>
+
+  <span>
+    <label for="genderInputOther">Other</label>
+    <input id="genderInputOther"
+           type="radio"
+           name="gender"
+           value="Other">
+  </span>
+
+  <br>
+  <br>
+
+
+  <div>
+    <span>
+      Interests:
+    </span>
+    <span>
+    <label for="sportsInput">Sports</label>
+    <input id="sportsInput"
+           type="checkbox"
+           name="interests"
+           value="Sports">
+    </span>
+
+    <span>
+    <label for="musicInput">Music</label>
+    <input id="musicInput"
+           type="checkbox"
+           name="interests"
+           value="Music">
+    </span>
+
+    <span>
+    <label for="readingInput">Reading</label>
+    <input id="readingInput"
+           type="checkbox"
+           name="interests"
+           value="Reading">
+    </span>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="countrySection">
+      Country:
+    </label>
+    <select name="country" id="countrySection">
+      <option value="UA">Ukraine</option>
+      <option value="DE">Germany</option>
+      <option value="USA">United States</option>
+      <option value="ES">Spain</option>
+    </select>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="shortBioInput">Short Bio:</label>
+    <textarea id="shortBioInput"
+              name="bio"
+              placeholder="Short Bio"
+              rows="5"
+              cols="50"
+    ></textarea>
+
+  </div>
+
+
+  <br>
+
+  <button type="submit">
+    Submit
+  </button>
+
+  <button type="reset">
+    Reset
+  </button>
+
+</form>
+
+</body>
+</html>
