@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Helvetica, sans-serif;
   margin: 0;
@@ -6,15 +10,14 @@ body {
   color: #1f2937;
 }
 
-header {
+.site-header {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
   background-color: #059669;
   color: white;
-
 }
 
-header img {
+.profile-image {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -22,70 +25,99 @@ header img {
   margin: 10px 0;
 }
 
-nav {
+.site-navigation {
   background-color: #047857;
   padding: 10px;
 }
 
-nav ul {
+.nav-menu {
   list-style: none;
   padding: 0;
-  justify-content: center;
+  margin: 0;
   display: flex;
+  justify-content: center;
   gap: 30px;
-
 }
 
-nav a {
+.nav-menu-item {
+  margin: 0;
+}
+
+.nav-menu-link {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
-
-main {
+.content-wrapper {
   width: 80%;
   margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-section {
+.content-section {
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-
 }
 
-table {
+.education-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-table, th, td {
+.education-table,
+.education-table th,
+.education-table td {
   border: 1px solid #ddd;
 }
 
-th, td {
+.education-table th,
+.education-table td {
   padding: 10px;
   text-align: left;
 }
 
-th {
+.education-table th {
   background-color: #059669;
   color: white;
 }
 
-video {
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+.video {
   width: 100%;
   max-width: 800px;
   border-radius: 10px;
+  align-self: center;
 }
 
-footer {
+.site-footer {
   text-align: center;
   padding: 10px;
-  background: #047857;
+  background-color: #047857;
   color: white;
   margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .content-wrapper {
+    width: 95%;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
 }
