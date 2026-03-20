@@ -1,6 +1,6 @@
-let title = document.querySelector("#title");
+let title = document.querySelector("h1");
 const image = document.querySelector("#image");
-let description = document.querySelector("#description");
+let description = document.querySelector("p");
 
 
 document.querySelector("#change-text-btn").addEventListener("click", function () {
